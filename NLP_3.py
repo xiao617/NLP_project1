@@ -197,8 +197,8 @@ def main():
 	predictions = model.predict(dataScore)
 	#for i, prediction in enumerate(predictions):
 	#	print('Predicted: %s, Target: %s' % (prediction, dataSentiment[i]))
-	print('R-squared: %.3f' % model.score(dataScore, dataSentiment))
-	rms = mean_squared_error(dataSentiment,predictions) #0.332
+	print('R-squared: %.3f' % model.score(dataScore, dataSentiment)) #0.332
+	rms = mean_squared_error(dataSentiment,predictions)
 	print('RMSE: %.3f' % sqrt(rms)) #0.311
 	print('MSE: %.3f' % rms) #0.097
 
