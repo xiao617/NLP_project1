@@ -121,12 +121,12 @@ def main():
 			sc += PMI(w, wc, bull, bear)
 		dataScore.append([sc])
 
-	print(dataScore)
+	# print(dataScore)
 
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
 
-	# print('\nR-squared: %.2f' % model.score(dataScore, dataSentiment))
+	print('\nR-squared: %.2f' % model.score(dataScore, dataSentiment))
 
 
 if __name__ == "__main__":
