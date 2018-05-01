@@ -1,8 +1,10 @@
 import json
 import sys
 import os
+from nltk.stem.snowball import SnowballStemmer
 
 if __name__ == "__main__":
+    stemmer = SnowballStemmer("english", ignore_stopwords=True)
     train_f = open("training_set.json","r")
     train_cont = train_f.read()
     train_obj = json.loads(train_cont)
@@ -21,6 +23,9 @@ if __name__ == "__main__":
                 word = '^INCREASE'
             elif word[0] == '-':
                 word = '^DECREASE'
+            else:
+                word = stemmer.stem(word)
+                #print('>' + word)
             new_tweet.append(word)
         obj['tweet'] = ' '.join(new_tweet)
         #print(new_tweet)
