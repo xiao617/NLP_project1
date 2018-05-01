@@ -114,9 +114,6 @@ def main():
 				elif x.sentiment < -0.25:
 					wc_bi[w][1] += 1
 				wc_bi[w][2] += 1
-    
-	for w in wc_bi:
-		print( w + ', ' + str(PMI(w, wc_bi, bull, bear)) )
 
 	# Testing File
 	# TestingFile = open('training_set.json','r')
@@ -134,6 +131,7 @@ def main():
 	for row in TestList:
 		dataSentiment.append([float(row.sentiment)])
 		sc = 0.0
+		sc_bi = 0.0
 		# unigram
 		for w in row.tweet:
 			sc += PMI(w, wc, bull, bear)
@@ -141,8 +139,9 @@ def main():
 		for i in [0, len(row.tweet) - 2]:
 			for j in [i, len(row.tweet) - 1]:
 				w = row.tweet[i] + '_' + row.tweet[j]
-				sc += PMI(w, wc_bi, bull, bear)
-		dataScore.append([sc])
+				sc_bi += PMI(w, wc_bi, bull, bear)
+
+		dataScore.append([ 0.4 * sc + 0.6 * sc_bi ])
 
 	# print(dataScore)
 
