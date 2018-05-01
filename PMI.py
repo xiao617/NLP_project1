@@ -129,17 +129,21 @@ def main():
 		# unigram
 		for w in row.tweet:
 			sc += PMI(w, wc, counter)
+			# print(str(PMI(w, wc, counter)) + ' , ' + w )
 		# distant bigram
 		for i in [0, len(row.tweet) - 2]:
 			for j in [i, len(row.tweet) - 1]:
 				w = row.tweet[i] + '_' + row.tweet[j]
 				sc_bi += PMI(w, wc_bi, counter)
+				# print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
 
 		dataScore.append([ 0.3 * sc + 0.7 * sc_bi ])
 
 	# print(dataScore)
 	# for w in wc:
 	# 	print( w + ', ' + str(PMI(w, wc, counter)) )
+	# for w in wc_bi:
+	# 	print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
 
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
