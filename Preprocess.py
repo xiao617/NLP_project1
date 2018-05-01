@@ -1,3 +1,7 @@
+'''
+Usage: python3 Prepocess.py <input.json> <output.json>
+'''
+
 import json
 import sys
 import os
@@ -15,8 +19,9 @@ if __name__ == "__main__":
         tweet = obj['tweet'].lower()
         new_tweet = []
         for word in tweet.split(' '):
-            word = word.strip(',').strip('.').strip('!').strip(':').strip(';').strip(' ').strip('#').strip('(').strip(')')
-            #print(word)
+            word = word.strip(',').strip('.').strip('!').strip(':').strip(';').strip(' ').strip('#').strip('(').strip(')').strip(' ')
+            if len(word) == 0:
+                continue
             if word.find("http")>-1 or len(word)<=0:
                 continue
             elif word.find('$') > -1 and len(word)-1 > word.find('$') and word[word.find('$')+1:].isalpha():
@@ -25,12 +30,8 @@ if __name__ == "__main__":
                 word = '^INCREASE'
             elif word[0] == '-':
                 word = '^DECREASE'
-            else:
-                word = stemmer.stem(word)
-                #print('>' + word)
             new_tweet.append(word)
         obj['tweet'] = ' '.join(new_tweet)
-        #print(new_tweet)
         new_obj.append(obj)
     new_file = open(output_name, "w")
     new_file.write(json.dumps(new_obj))
