@@ -22,7 +22,7 @@ if __name__ == "__main__":
             word = word.strip(',').strip('.').strip('!').strip(':').strip(';').strip(' ').strip('#').strip('(').strip(')').strip(' ')
             if len(word) == 0:
                 continue
-            if word.find("http")>-1 or len(word)<=0:
+            if word.find("http")>-1:
                 continue
             elif word.find('$') > -1 and len(word)-1 > word.find('$') and word[word.find('$')+1:].isalpha():
                 word = '^CASHTAG'
