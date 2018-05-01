@@ -53,9 +53,9 @@ class DataManager:
 
 def count_sentiment(sentiment, counter):
 
-	if sentiment > 0.5: counter[0] += 2
+	if sentiment > 0.7: counter[0] += 2
 	elif sentiment > 0.25: counter[0] += 1
-	elif sentiment < -0.5: counter[1] += 2
+	elif sentiment < -0.7: counter[1] += 2
 	elif sentiment < -0.25: counter[1] += 1
 
 	return counter
@@ -135,7 +135,7 @@ def main():
 				w = row.tweet[i] + '_' + row.tweet[j]
 				sc_bi += PMI(w, wc_bi, counter)
 
-		dataScore.append([ 0.4 * sc + 0.6 * sc_bi ])
+		dataScore.append([ 0.3 * sc + 0.7 * sc_bi ])
 
 	# print(dataScore)
 	# for w in wc:
