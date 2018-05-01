@@ -80,7 +80,7 @@ def PMI(word, wc, counter):
 def main():
 
 	# Training File
-	TrainingFile = open('training_set.json','r')
+	TrainingFile = open('training_set_preprocessed.json','r')
 	TrainingData = json.load(TrainingFile)
 	TrainingFile.close()
 	DataList = []
@@ -110,8 +110,8 @@ def main():
 				wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
 
 	# Testing File
-	TestingFile = open('training_set.json','r')
-	# TestingFile = open('test_set.json','r')
+	TestingFile = open('training_set_preprocessed.json','r')
+	# TestingFile = open('test_set_preprocessed.json','r')
 	TestingData = json.load(TestingFile)
 	TestingFile.close()
 	TestList = []

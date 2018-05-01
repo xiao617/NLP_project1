@@ -33,6 +33,6 @@ if __name__ == "__main__":
         obj['tweet'] = ' '.join(new_tweet)
         #print(new_tweet)
         new_obj.append(obj)
-    # new_file = open("training_set_prepocessed.json", "w")
-    new_file = open("test_set_prepocessed.json", "w")
+    # new_file = open("training_set_preprocessed.json", "w")
+    new_file = open("test_set_preprocessed.json", "w")
     new_file.write(json.dumps(new_obj))
