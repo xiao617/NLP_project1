@@ -92,6 +92,7 @@ def main():
 	# [bull_count, bear_count]
 	wc_bi = dict()
 	wc = dict()
+	wc_snip = dict()
 	counter = [0, 0]
 
 	for x in DataList:
@@ -108,6 +109,11 @@ def main():
 				if not w in wc_bi:
 					wc_bi[w] = [0, 0]
 				wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
+		# count snippet unigram
+		for w in x.snippet:
+			if not w in wc_snip:
+				wc_snip[w] = [0, 0]
+			wc_snip[w] = count_sentiment(x.sentiment, wc_snip[w])
 
 	# Testing File
 	# TestingFile = open('training_set_preprocessed.json','r')
@@ -125,7 +131,11 @@ def main():
 	for row in TestList:
 		dataSentiment.append([float(row.sentiment)])
 		sc = 0.0
+		sc_snip = 0.0
 		sc_bi = 0.0
+		# snip
+		for w in row.snippet:
+			sc_snip += PMI(w, wc_snip, counter)
 		# unigram
 		for w in row.tweet:
 			sc += PMI(w, wc, counter)
@@ -137,9 +147,10 @@ def main():
 				sc_bi += PMI(w, wc_bi, counter)
 				# print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
 
-		dataScore.append([ sc, sc_bi ])
+		dataScore.append([ sc, sc_bi, sc_snip ])
 
-	# print(dataScore)
+	# for arr in dataScore:
+	# 	print(arr[0], arr[1], arr[2])
 	# for w in wc:
 	# 	print( w + ', ' + str(PMI(w, wc, counter)) )
 	# for w in wc_bi:
