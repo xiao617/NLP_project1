@@ -51,23 +51,30 @@ class DataManager:
 		else:
 			DataManager.cutData(self.snippet, DataList["snippet"])
 
+def count_sentiment(sentiment, counter):
 
-def PMI(word, wc_bi, bull, bear):
+	if sentiment > 0.5: counter[0] += 2
+	elif sentiment > 0.25: counter[0] += 1
+	elif sentiment < -0.5: counter[1] += 2
+	elif sentiment < -0.25: counter[1] += 1
 
-	if word not in wc_bi:
+	return counter
+
+
+def PMI(word, wc, counter):
+
+	if word not in wc:
 		return 0
 
-	if wc_bi[word][0] > 0:
-		PMI_bull = math.log2( (bull+bear) * wc_bi[word][0] / ( bull * wc_bi[word][2] ))
-	else:
-		PMI_bull = 0
+	PMI = [0, 0]
+	word_total = wc[word][0] + wc[word][1]
+	sent_total = counter[0] + counter[1]
 
-	if wc_bi[word][1] > 0:
-		PMI_bear = math.log2( (bull+bear) * wc_bi[word][1] / ( bear * wc_bi[word][2] ))
-	else:
-		PMI_bear = 0
+	for i in [0, 1]:
+		if wc[word][i] > 0:
+			PMI[i] = math.log2( sent_total * wc[word][i] / ( counter[i] * word_total ))
 
-	return (PMI_bull - PMI_bear)
+	return (PMI[0] - PMI[1])
 
 
 def main():
@@ -82,52 +89,29 @@ def main():
 		tempt.insertData(DataElement)
 		DataList.append(tempt)
 
+	# [bull_count, bear_count]
 	wc_bi = dict()
 	wc = dict()
-	bull = 0
-	bear = 0
+	counter = [0, 0]
 
 	for x in DataList:
-		if x.sentiment > 0.6:
-			bull += 2
-		elif x.sentiment > 0.25:
-			bull += 1
-		elif x.sentiment < -0.6:
-			bear += 2
-		elif x.sentiment < -0.25:
-			bear += 1
-
+		counter = count_sentiment(x.sentiment, counter)
 		# count unigram
 		for w in x.tweet:
 			if not w in wc:
-				wc[w] = [0, 0, 0]
-			if x.sentiment > 0.6:
-				wc[w][0] += 2
-				wc[w][2] += 1
-			elif x.sentiment > 0.25:
-				wc[w][0] += 1
-			elif x.sentiment < -0.6:
-				wc[w][1] += 2
-				wc[w][2] += 1
-			elif x.sentiment < -0.25:
-				wc[w][1] += 1
-			wc[w][2] += 1
-
-		# count simple bigram
+				wc[w] = [0, 0]
+			wc[w] = count_sentiment(x.sentiment, wc[w])
+		# count distant bigram
 		for i in [0, len(x.tweet) - 2]:
 			for j in [i, len(x.tweet) - 1]:
 				w = x.tweet[i] + '_' + x.tweet[j]
 				if not w in wc_bi:
-					wc_bi[w] = [0, 0, 0]
-				if x.sentiment > 0.25:
-					wc_bi[w][0] += 1
-				elif x.sentiment < -0.25:
-					wc_bi[w][1] += 1
-				wc_bi[w][2] += 1
+					wc_bi[w] = [0, 0]
+				wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
 
 	# Testing File
-	# TestingFile = open('training_set.json','r')
-	TestingFile = open('test_set.json','r')
+	TestingFile = open('training_set.json','r')
+	# TestingFile = open('test_set.json','r')
 	TestingData = json.load(TestingFile)
 	TestingFile.close()
 	TestList = []
@@ -144,12 +128,12 @@ def main():
 		sc_bi = 0.0
 		# unigram
 		for w in row.tweet:
-			sc += PMI(w, wc, bull, bear)
+			sc += PMI(w, wc, counter)
 		# distant bigram
 		for i in [0, len(row.tweet) - 2]:
 			for j in [i, len(row.tweet) - 1]:
 				w = row.tweet[i] + '_' + row.tweet[j]
-				sc_bi += PMI(w, wc_bi, bull, bear)
+				sc_bi += PMI(w, wc_bi, counter)
 
 		dataScore.append([ 0.4 * sc + 0.6 * sc_bi ])
 
@@ -158,7 +142,7 @@ def main():
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
 
-	print('\nR-squared: %.2f' % model.score(dataScore, dataSentiment))
+	print('\nR-squared: %.5f' % model.score(dataScore, dataSentiment))
 
 
 if __name__ == "__main__":
