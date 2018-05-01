@@ -56,9 +56,11 @@ class DataManager:
 def count_sentiment(sentiment, counter):
 
 	if sentiment > 0.7: counter[0] += 2
-	elif sentiment > 0.25: counter[0] += 1
+	elif sentiment > 0.2: counter[0] += 1
+	elif sentiment > 0: counter[0] += 0.5
 	elif sentiment < -0.7: counter[1] += 2
-	elif sentiment < -0.25: counter[1] += 1
+	elif sentiment < -0.2: counter[1] += 1
+	elif sentiment < 0: counter[0] += 0.5
 
 	return counter
 
@@ -163,8 +165,8 @@ def main():
 	model.fit(dataScore, dataSentiment)
 	prediction = model.predict(dataScore)
 
-	for arr in dataScore:
-		print(arr[0], arr[1], arr[2])
+	# for arr in dataScore:
+	# 	print(arr[0], arr[1], arr[2])
 
 	# classify
 	right = 0
@@ -177,8 +179,8 @@ def main():
 		elif prediction[i][0] < 0 and dataSentiment[i][0] < 0: right += 1
 		else: wrong += 1
 
-	# print('MSW: %.5f' % mean_squared_error(prediction, dataSentiment))
-	# print('F1: %.5f' % (right / (right+wrong)))
+	print('MSW: %.5f' % mean_squared_error(prediction, dataSentiment))
+	print('F1: %.5f' % (right / (right+wrong)))
 
 if __name__ == "__main__":
 	main()
