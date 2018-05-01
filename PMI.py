@@ -137,7 +137,7 @@ def main():
 				sc_bi += PMI(w, wc_bi, counter)
 				# print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
 
-		dataScore.append([ 0.3 * sc + 0.7 * sc_bi ])
+		dataScore.append([ sc, sc_bi ])
 
 	# print(dataScore)
 	# for w in wc:
