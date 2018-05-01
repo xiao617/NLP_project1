@@ -4,8 +4,8 @@ import os
 from nltk.stem.snowball import SnowballStemmer
 
 if __name__ == "__main__":
-    origin_name = sys.argv(1)
-    output_name = sys.argv(2)
+    origin_name = sys.argv[1]
+    output_name = sys.argv[2]
     stemmer = SnowballStemmer("english", ignore_stopwords=True)
     train_f = open(origin_name,"r")
     train_cont = train_f.read()
