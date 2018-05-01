@@ -94,6 +94,7 @@ def main():
 	# [bull_count, bear_count]
 	wc_bi = dict()
 	wc = dict()
+	wc_dist = dict()
 	wc_snip = dict()
 	wc_snip_bi = dict()
 	counter = [0, 0]
@@ -111,6 +112,13 @@ def main():
 			if not w in wc_bi:
 				wc_bi[w] = [0, 0]
 			wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
+		# dist bigram
+		for i in range(0, len(x.tweet) - 1):
+			for j in range(i+1, len(x.tweet) - 1):
+				w = x.tweet[i] + '_' + x.tweet[j]
+				if not w in wc_dist:
+					wc_dist[w] = [0, 0]
+				wc_dist[w] = count_sentiment(x.sentiment, wc_dist[w])
 		# count snippet unigram
 		for w in x.snippet:
 			if not w in wc_snip:
@@ -142,6 +150,7 @@ def main():
 		sc_snip = 0.0
 		sc_bi = 0.0
 		sc_snip_bi = 0.0
+		sc_dist = 0.0
 		# snip
 		for w in row.snippet:
 			sc_snip += PMI(w, wc_snip, counter)
@@ -152,12 +161,17 @@ def main():
 		for i in range(0, len(row.tweet) - 1):
 			w = row.tweet[i] + '_' + row.tweet[i+1]
 			sc_bi += PMI(w, wc_bi, counter)
+		# dist bigram
+		for i in range(0, len(row.tweet) - 1):
+			for j in range(i+1, len(x.tweet) - 1):
+				w = row.tweet[i] + '_' + row.tweet[j]
+				sc_dist += PMI(w, wc_dist, counter)
 		# snippet bigram
 		for i in range(0, len(row.snippet) - 1):
 			w = row.snippet[i] + '_' + row.snippet[i+1]
 			sc_snip_bi += PMI(w, wc_snip_bi, counter)
 
-		dataScore.append([ sc, sc_bi, sc_snip, sc_snip_bi ])
+		dataScore.append([ sc, sc_bi, sc_snip, sc_snip_bi, sc_dist ])
 
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
@@ -174,7 +188,6 @@ def main():
 		elif prediction[i][0] < 0 and dataSentiment[i][0] < 0: right += 1
 		else: wrong += 1
 
-	print('\nR-squared: %.5f' % model.score(dataScore, dataSentiment))
 	print('MSW: %.5f' % mean_squared_error(prediction, dataSentiment))
 	print('F1: %.5f' % (right / (right+wrong)))
 
