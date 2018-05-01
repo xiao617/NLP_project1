@@ -88,8 +88,12 @@ def main():
 	bear = 0
 
 	for x in DataList:
-		if x.sentiment > 0.25:
+		if x.sentiment > 0.6:
+			bull += 2
+		elif x.sentiment > 0.25:
 			bull += 1
+		elif x.sentiment < -0.6:
+			bear += 2
 		elif x.sentiment < -0.25:
 			bear += 1
 
@@ -97,8 +101,14 @@ def main():
 		for w in x.tweet:
 			if not w in wc:
 				wc[w] = [0, 0, 0]
-			if x.sentiment > 0.25:
+			if x.sentiment > 0.6:
+				wc[w][0] += 2
+				wc[w][2] += 1
+			elif x.sentiment > 0.25:
 				wc[w][0] += 1
+			elif x.sentiment < -0.6:
+				wc[w][1] += 2
+				wc[w][2] += 1
 			elif x.sentiment < -0.25:
 				wc[w][1] += 1
 			wc[w][2] += 1
