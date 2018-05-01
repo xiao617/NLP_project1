@@ -58,12 +58,12 @@ def PMI(word, wc, bull, bear):
 		return 0
 
 	if wc[word][0] > 0:
-		PMI_bull = math.log2( (bull+bear) * wc[word][0] / ( bull * (wc[word][0] + wc[word][1]) ))
+		PMI_bull = math.log2( (bull+bear) * wc[word][0] / ( bull * wc[word][2] ))
 	else:
 		PMI_bull = 0
 
 	if wc[word][1] > 0:
-		PMI_bear = math.log2( (bull+bear) * wc[word][1] / ( bear * (wc[word][0] + wc[word][1]) ))
+		PMI_bear = math.log2( (bull+bear) * wc[word][1] / ( bear * wc[word][2] ))
 	else:
 		PMI_bear = 0
 
@@ -87,22 +87,24 @@ def main():
 	bear = 0
 
 	for x in DataList:
-		if x.sentiment > 0:
+		if x.sentiment > 0.25:
 			bull += 1
-		else:
+		elif x.sentiment < -0.25:
 			bear += 1
 		for w in x.tweet:
 			if not w in wc:
-				wc[w] = [0, 0]
-			if x.sentiment > 0:
+				wc[w] = [0, 0, 0]
+			if x.sentiment > 0.25:
 				wc[w][0] += 1
-			else:
+			elif x.sentiment < -0.25:
 				wc[w][1] += 1
+			wc[w][2] += 1
     
 	# for w in wc:
 	# 	print( w + ', ' + str(PMI(w, wc, bull, bear)) )
 
 	# Testing File
+	# TestingFile = open('training_set.json','r')
 	TestingFile = open('test_set.json','r')
 	TestingData = json.load(TestingFile)
 	TestingFile.close()
