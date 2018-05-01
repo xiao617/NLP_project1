@@ -7,6 +7,8 @@ import math
 
 import sklearn
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from math import sqrt
 
 class DataManager:
 	def __init__(self):
@@ -54,9 +56,11 @@ class DataManager:
 def count_sentiment(sentiment, counter):
 
 	if sentiment > 0.7: counter[0] += 2
-	elif sentiment > 0.25: counter[0] += 1
+	elif sentiment > 0.2: counter[0] += 1
+	elif sentiment > 0: counter[0] += 0.5
 	elif sentiment < -0.7: counter[1] += 2
-	elif sentiment < -0.25: counter[1] += 1
+	elif sentiment < -0.2: counter[1] += 1
+	elif sentiment < 0: counter[0] += 0.5
 
 	return counter
 
@@ -92,6 +96,8 @@ def main():
 	# [bull_count, bear_count]
 	wc_bi = dict()
 	wc = dict()
+	wc_snip = dict()
+	wc_snip_bi = dict()
 	counter = [0, 0]
 
 	for x in DataList:
@@ -101,17 +107,27 @@ def main():
 			if not w in wc:
 				wc[w] = [0, 0]
 			wc[w] = count_sentiment(x.sentiment, wc[w])
-		# count distant bigram
-		for i in [0, len(x.tweet) - 2]:
-			for j in [i, len(x.tweet) - 1]:
-				w = x.tweet[i] + '_' + x.tweet[j]
-				if not w in wc_bi:
-					wc_bi[w] = [0, 0]
-				wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
+		# count bigram
+		for i in range(0, len(x.tweet) - 1):
+			w = x.tweet[i] + '_' + x.tweet[i+1]
+			if not w in wc_bi:
+				wc_bi[w] = [0, 0]
+			wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
+		# count snippet unigram
+		for w in x.snippet:
+			if not w in wc_snip:
+				wc_snip[w] = [0, 0]
+			wc_snip[w] = count_sentiment(x.sentiment, wc_snip[w])
+		# count snippet bigram
+		for i in range(0, len(x.snippet) - 1):
+			w = x.snippet[i] + '_' + x.snippet[i+1]
+			if not w in wc_snip_bi:
+				wc_snip_bi[w] = [0, 0]
+			wc_snip_bi[w] = count_sentiment(x.sentiment, wc_snip_bi[w])
 
 	# Testing File
-	# TestingFile = open('training_set_preprocessed.json','r')
-	TestingFile = open('test_set_preprocessed.json','r')
+	TestingFile = open('training_set_preprocessed.json','r')
+	# TestingFile = open('test_set_preprocessed.json','r')
 	TestingData = json.load(TestingFile)
 	TestingFile.close()
 	TestList = []
@@ -125,31 +141,46 @@ def main():
 	for row in TestList:
 		dataSentiment.append([float(row.sentiment)])
 		sc = 0.0
+		sc_snip = 0.0
 		sc_bi = 0.0
+		sc_snip_bi = 0.0
+		# snip
+		for w in row.snippet:
+			sc_snip += PMI(w, wc_snip, counter)
 		# unigram
 		for w in row.tweet:
 			sc += PMI(w, wc, counter)
-			# print(str(PMI(w, wc, counter)) + ' , ' + w )
-		# distant bigram
-		for i in [0, len(row.tweet) - 2]:
-			for j in [i, len(row.tweet) - 1]:
-				w = row.tweet[i] + '_' + row.tweet[j]
-				sc_bi += PMI(w, wc_bi, counter)
-				# print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
+		# bigram
+		for i in range(0, len(row.tweet) - 1):
+			w = row.tweet[i] + '_' + row.tweet[i+1]
+			sc_bi += PMI(w, wc_bi, counter)
+		# snippet bigram
+		for i in range(0, len(row.snippet) - 1):
+			w = row.snippet[i] + '_' + row.snippet[i+1]
+			sc_snip_bi += PMI(w, wc_snip_bi, counter)
 
-		dataScore.append([ sc, sc_bi ])
-
-	# print(dataScore)
-	# for w in wc:
-	# 	print( w + ', ' + str(PMI(w, wc, counter)) )
-	# for w in wc_bi:
-	# 	print(str(PMI(w, wc_bi, counter)) + ' , ' + w )
+		dataScore.append([ sc, sc_bi, sc_snip, sc_snip_bi])
 
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
+	prediction = model.predict(dataScore)
 
-	print('\nR-squared: %.5f' % model.score(dataScore, dataSentiment))
+	# for arr in dataScore:
+	# 	print(arr[0], arr[1], arr[2])
 
+	# classify
+	right = 0
+	wrong = 0
+	for i in range(0, len(prediction)-1):
+		if prediction[i] == 0:
+			if dataSentiment[i] == 0: right += 1
+			else: wrong += 1
+		elif prediction[i][0] > 0 and dataSentiment[i][0] > 0: right += 1
+		elif prediction[i][0] < 0 and dataSentiment[i][0] < 0: right += 1
+		else: wrong += 1
+
+	print('MSW: %.5f' % mean_squared_error(prediction, dataSentiment))
+	print('F1: %.5f' % (right / (right+wrong)))
 
 if __name__ == "__main__":
 	main()
