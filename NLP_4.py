@@ -111,13 +111,14 @@ def GroupValue_t(Value):
 
 def GroupValue_s(Value):
 	value = float(Value)	
-	v = [0.9,0.6,0.3]
+	v = [0.9,0.1]
 	for i in range(len(v)):
 		if value > v[i]:
 			return v[i]
 		elif value < -v[i]:
 			return -v[i]
-	return 0			
+	return 0
+		
 
 def main():
 	# Word Score List
@@ -131,7 +132,7 @@ def main():
 	for i in range(N):
 		word = "#" + targetIn[i]['token']
 		targetDict[word] = targetIn[i]['market_sentiment']
-		sg = str(GroupValue_s(str(targetDict[word]/3)))
+		sg = str(GroupValue_s(str(targetDict[word]/3.5)))
 		train_s.append((sg,word))
 	with open('NTUSD-Fin/NTUSD_Fin_word_v1.0.json', 'r', encoding='utf-8') as f:
 		targetIn = json.load(f)
@@ -139,9 +140,8 @@ def main():
 	for i in range(N):
 		word = targetIn[i]['token']
 		targetDict[word] = targetIn[i]['market_sentiment']
-		sg = str(GroupValue_s(str(targetDict[word]/3)))
+		sg = str(GroupValue_s(str(targetDict[word]/3.5)))
 		train_s.append((sg,word))
-
 	# Training File
 	TrainingFile = open('training_set.json','r')
 	TrainingData = json.load(TrainingFile)
@@ -149,8 +149,6 @@ def main():
 	DataList = []
 	grocery_t = Grocery("tweet")
 	grocery_s = Grocery("snippet")
-#	train_t = [] 
-#	train_s = [] 
 	for DataElement in TrainingData:
 		tempt = DataManager() 
 		tempt.insertData(DataElement)
@@ -166,7 +164,7 @@ def main():
 		else:
 			tempt.group_s = 0.0
 		DataList.append(tempt)
-	grocery_t.train(train_t)
+	grocery_t.train(train_t+train_s)
 	grocery_t.save()
 	grocery_s.train(train_s)
 	grocery_s.save()
@@ -183,15 +181,15 @@ def main():
 		e = row.group_t
 		f = row.group_s
 		dataScore.append([a,b,c,d,e,f])
-	#print(dataScore, file=outfile)
+	#	print(e, f, file=outfile)
 	#outfile.close()
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)
-	print('(model)R-squared: %.3f' % model.score(dataScore, dataSentiment)) #0.886
+	print('(model)R-squared: %.3f' % model.score(dataScore, dataSentiment)) #0.915
 	predictions = model.predict(dataScore)
 	rms = mean_squared_error(dataSentiment,predictions)
-	print('RMSE: %.3f' % sqrt(rms)) #0.127
-	print('MSE: %.3f' % rms) #0.016
+	print('RMSE: %.3f' % sqrt(rms)) #0.110
+	print('MSE: %.3f' % rms) #0.012
 	
 	# Testing File
 	TestingFile = open('test_set.json','r')
@@ -229,15 +227,15 @@ def main():
 		e = row.group_t
 		f = row.group_s
 		dataScore.append([a,b,c,d,e,f])
-	#print(dataScore, file=outfile)
+	#	print(e, f, file=outfile)
 	#outfile.close()
 	predictions = model.predict(dataScore)
 	#for i, prediction in enumerate(predictions):
 	#	print('Predicted: %s, Target: %s' % (prediction, dataSentiment[i]))
-	print('(test)R-squared: %.3f' % model.score(dataScore, dataSentiment)) #0.430
+	print('(test)R-squared: %.3f' % model.score(dataScore, dataSentiment)) #0.502
 	rms = mean_squared_error(dataSentiment,predictions)
-	print('RMSE: %.3f' % sqrt(rms)) #0.287
-	print('MSE: %.3f' % rms) #0.082
+	print('RMSE: %.3f' % sqrt(rms)) #0.268
+	print('MSE: %.3f' % rms) #0.072
 
 
 if __name__ == "__main__":
