@@ -5,6 +5,8 @@ import json
 import nltk.sentiment.vader
 import sklearn
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
 if __name__ == "__main__":
     train_f = open("training_set.json","r")
     train_cont = train_f.read()
@@ -37,4 +39,6 @@ if __name__ == "__main__":
     model = LinearRegression()
     model.fit(reshaped, scores)
     print('R-squared: %.2f' % model.score(reshaped, scores))
+    rms = sqrt(mean_squared_error(reshaped, scores))
+    print(rms)
 
