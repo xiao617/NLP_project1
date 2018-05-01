@@ -17,17 +17,10 @@ if __name__ == "__main__":
                 continue
             elif word.find('$') > -1 and len(word)-1 > word.find('$') and word[word.find('$')+1:].isalpha():
                 word = '^CASHTAG'
-            elif (word[0] in ['+', '-']):
-                try:
-                    number = float(word[1:] if isdigit(word[-1]) else word[1:-1])
-                except:
-                    number = -1.0
-                if number>=0.0:
-                    tmp = '^INCREASE' if word[0]=='+' else '^DECREASE'
-                    tmp += str(int(number)//10 if int(number) < 100 else 10)
-                    tmp += word[-1] if word[-1]=='%' else ''
-                    #print(tmp, word)
-                    word = tmp
+            elif word[0] == '+':
+                word = '^INCREASE'
+            elif word[0] == '-':
+                word = '^DECREASE'
             new_tweet.append(word)
         obj['tweet'] = ' '.join(new_tweet)
         #print(new_tweet)
