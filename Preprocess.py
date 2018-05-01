@@ -3,7 +3,8 @@ import sys
 import os
 
 if __name__ == "__main__":
-    train_f = open("training_set.json","r")
+    # train_f = open("training_set.json","r")
+    train_f = open("test_set.json","r")
     train_cont = train_f.read()
     train_obj = json.loads(train_cont)
     new_obj = []
@@ -32,5 +33,6 @@ if __name__ == "__main__":
         obj['tweet'] = ' '.join(new_tweet)
         #print(new_tweet)
         new_obj.append(obj)
-    new_file = open("training_set_prepocessed.json", "w")
+    # new_file = open("training_set_prepocessed.json", "w")
+    new_file = open("test_set_prepocessed.json", "w")
     new_file.write(json.dumps(new_obj))
