@@ -4,8 +4,10 @@ import os
 from nltk.stem.snowball import SnowballStemmer
 
 if __name__ == "__main__":
+    origin_name = sys.argv(1)
+    output_name = sys.argv(2)
     stemmer = SnowballStemmer("english", ignore_stopwords=True)
-    train_f = open("training_set.json","r")
+    train_f = open(origin_name,"r")
     train_cont = train_f.read()
     train_obj = json.loads(train_cont)
     new_obj = []
@@ -30,5 +32,5 @@ if __name__ == "__main__":
         obj['tweet'] = ' '.join(new_tweet)
         #print(new_tweet)
         new_obj.append(obj)
-    new_file = open("training_set_preprocessed.json", "w")
+    new_file = open(output_name, "w")
     new_file.write(json.dumps(new_obj))
