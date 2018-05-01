@@ -110,8 +110,8 @@ def main():
 				wc_bi[w] = count_sentiment(x.sentiment, wc_bi[w])
 
 	# Testing File
-	TestingFile = open('training_set_preprocessed.json','r')
-	# TestingFile = open('test_set_preprocessed.json','r')
+	# TestingFile = open('training_set_preprocessed.json','r')
+	TestingFile = open('test_set_preprocessed.json','r')
 	TestingData = json.load(TestingFile)
 	TestingFile.close()
 	TestList = []
@@ -138,6 +138,8 @@ def main():
 		dataScore.append([ 0.4 * sc + 0.6 * sc_bi ])
 
 	# print(dataScore)
+	# for w in wc:
+	# 	print( w + ', ' + str(PMI(w, wc, counter)) )
 
 	model = LinearRegression()
 	model.fit(dataScore, dataSentiment)

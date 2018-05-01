@@ -25,8 +25,8 @@ if __name__ == "__main__":
                     number = -1.0
                 if number>=0.0:
                     tmp = '^INCREASE' if word[0]=='+' else '^DECREASE'
-                    tmp += str(int(number)//10 if int(number) < 100 else 10)
-                    tmp += word[-1] if word[-1]=='%' else ''
+                    # tmp += str(int(number)//10 if int(number) < 100 else 10)
+                    # tmp += word[-1] if word[-1]=='%' else ''
                     #print(tmp, word)
                     word = tmp
             new_tweet.append(word)
