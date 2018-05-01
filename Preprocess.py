@@ -11,7 +11,7 @@ if __name__ == "__main__":
         tweet = obj['tweet'].lower()
         new_tweet = []
         for word in tweet.split(' '):
-            word = word.strip(',').strip('.').strip('!').strip(':').strip(';').strip(' ').strip('#')
+            word = word.strip(',').strip('.').strip('!').strip(':').strip(';').strip(' ').strip('#').strip('(').strip(')')
             #print(word)
             if word.find("http")>-1 or len(word)<=0:
                 continue
@@ -19,7 +19,7 @@ if __name__ == "__main__":
                 word = '^CASHTAG'
             elif (word[0] in ['+', '-']):
                 try:
-                    number = float(word[1:] if word[-1] != '%' else word[1:-1])
+                    number = float(word[1:] if isdigit(word[-1]) else word[1:-1])
                 except:
                     number = -1.0
                 if number>=0.0:
