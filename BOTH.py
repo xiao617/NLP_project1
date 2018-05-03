@@ -7,7 +7,6 @@ import sklearn
 from sklearn.metrics import f1_score
 from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
-from tgrocery import Grocery
 from math import sqrt
 
 def Value(x):
