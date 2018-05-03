@@ -8,7 +8,7 @@ child1.wait()
 child2 = subprocess.Popen(['python3','PMI.py'])
 child2.wait()
 
-# Use file got above to do LinearRegression()
+# Use files got above to do LinearRegression()
 print("\n*** Result ***")
 child3 = subprocess.Popen(['python3','BOTH.py'])
 child3.wait()
