@@ -8,7 +8,7 @@ MSE: 0.072
 f1-micro: 0.828
 f1-macro: 0.544
 
-*** PMI ***
+*** TextGrocery & PMI ***
 (train)R-squared: 0.930
 RMSE: 0.100
 MSE: 0.010
