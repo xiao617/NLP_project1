@@ -1,0 +1,681 @@
+No. 5
+Prediction = +0.218
+Sentiment  = -0.387
+Tweet: $FB has returned to my short watchlist.  Still too early for an entry IMO. https://t.co/PIEyswtHcQ
+Snippet: Still too early for an entry
+
+No. 13
+Prediction = +0.197
+Sentiment  = -0.406
+Tweet: $TSLA borrow still -7.5% which means very tight on the avail stock for shorting....  $VALE meanwhile easing up to "only -8%
+Snippet: very tight on the avail stock for shorting
+
+No. 14
+Prediction = -0.152
+Sentiment  = +0.415
+Tweet: @cek_cpa @ryanwallace198 @financialbuzz Guys - get into $WFM and $MJN.
+Snippet: get into $WFM and $MJN
+
+No. 30
+Prediction = +0.233
+Sentiment  = +0.000
+Tweet: $SBUX on the fence with this one.  Do I have time to dither?
+https://t.co/JcolfqlqGZ
+Snippet: on the fence with this one
+
+No. 38
+Prediction = -0.150
+Sentiment  = +0.357
+Tweet: Liberty Global. Cable TV/broadband. Mid-single digits EBITDA growth, &gt;10% FCF yield, with all FCF used for buybacks. $LBTYA
+Snippet: Mid-single digits EBITDA growth
+
+No. 42
+Prediction = -0.227
+Sentiment  = +0.356
+Tweet: @RanchoDinero Companies like $GOOGL just have cash to burn.
+Snippet: have cash to burn.
+
+No. 44
+Prediction = +0.214
+Sentiment  = -0.329
+Tweet: Bullshit! All #AppleStores are EMPTY in #China $MS must be preparing to liquidate $AAPL https://t.co/mvqXVS1JE8  https://t.co/OzHNY1cJ8P
+Snippet: Bullshit! All #AppleStores are EMPTY in #China
+
+No. 53
+Prediction = +0.252
+Sentiment  = -0.602
+Tweet: $ENDP being sued by FTC.....nobody will buy them with that hanging over their heads
+Snippet: ['$ENDP being sued by FT', 'nobody will buy them with that hanging over their heads']
+
+No. 56
+Prediction = +0.290
+Sentiment  = +0.000
+Tweet: @Fitbit outperforms after CNBC column highlights Google data, provides favorable Citron quote $FIT $GOOG $GOOGL https://t.co/MEgXyiBDzm
+Snippet: 
+
+No. 63
+Prediction = +0.040
+Sentiment  = -0.093
+Tweet: As Alcoa Kicks Off March Quarter Earnings, We See More Reasons To Be Cautious https://t.co/QIPEseBq6s $FB $AA $AAPL $BAC $BKE $BLK $C $CAT
+Snippet: We See More Reasons To Be Cautious
+
+No. 67
+Prediction = -0.088
+Sentiment  = +0.146
+Tweet: $agn getting rid of its generic biz wouldn't have any interest in $endp imo.  $hznp makes much more sense, plus its Irish based
+Snippet: ['plus its Irish based', ' getting rid of its generic biz']
+
+No. 83
+Prediction = +0.068
+Sentiment  = -0.142
+Tweet: Taking some profits on $NXPI https://t.co/ZXvtUt64MY
+Snippet: Taking some profits
+
+No. 85
+Prediction = +0.215
+Sentiment  = -0.562
+Tweet: Timberrrr $TSLA https://t.co/MRBgfDHHVa
+Snippet: Timberrrr
+
+No. 96
+Prediction = +0.129
+Sentiment  = -0.265
+Tweet: Israel wants to tax $GOOG and $FCBK more and $CHKP CEO says taxes may make co leave https://t.co/U7nhwXAFhy + https://t.co/T4obqculvu
+Snippet: ['wants to ta', 'CEO says taxes may make co leave']
+
+No. 104
+Prediction = +0.188
+Sentiment  = -0.086
+Tweet: Schizo stocks start strong finish weak - $FB $SEDG $LUV - See the video here
+Never finishing weak, our Disclaimer
+https://t.co/lnbwUl3rK8
+Snippet: start strong finish weak
+
+No. 108
+Prediction = +0.258
+Sentiment  = -0.130
+Tweet: $FB is taking the shine off $AAPL and $GOOG. As for $TWTR, no words.
+Snippet: $FB is taking the shine off $AAPL and $GOOG
+
+No. 109
+Prediction = +0.144
+Sentiment  = -0.524
+Tweet: Locked in some $FB puts for nice gain
+Snippet: Locked in some $FB puts for nice gain
+
+No. 112
+Prediction = +0.009
+Sentiment  = +0.334
+Tweet: $FB (110.20) is starting to show some relative strength and signs of potential B/O on the daily.
+Snippet: starting to show some relative strength
+
+No. 116
+Prediction = +0.223
+Sentiment  = -0.308
+Tweet: iPhone 6 may not be as secure as Apple thought.. $AAPL https://t.co/3YxdrAJcGS
+Snippet: may not be as secure
+
+No. 119
+Prediction = +0.290
+Sentiment  = +0.000
+Tweet: @Fitbit outperforms after CNBC column highlights Google data, provides favorable Citron quote $FIT $GOOG $GOOGL https://t.co/MEgXyiBDzm
+Snippet: 
+
+No. 136
+Prediction = +0.230
+Sentiment  = -0.193
+Tweet: Indices are rallying today, but it seems like a lot of the "highly covered companies" are underperforming $AAPL $FB $AMZN $MCD $SPY
+Snippet: ['Indices are rallying today', "a lot of the 'highly covered companies' are underperforming"]
+
+No. 142
+Prediction = +0.229
+Sentiment  = -0.401
+Tweet: Infection worries prompt regulatory reviews of Gilead leukaemia drug $GILD https://t.co/H9vqXpZ15G via @YahooFinance
+Snippet: Infection worries prompt regulatory reviews
+
+No. 145
+Prediction = +0.229
+Sentiment  = -0.336
+Tweet: GG #PC shipments slid -9.6% to lowest quarterly total since 2007 #Dell dethrones $HPQ 1st time this decade $MSFT $IT https://t.co/0b2RRIWSV9
+Snippet: ['shipments slid -9.6% to lowest quarterly total since 2007', 'dethrones']
+
+No. 149
+Prediction = -0.009
+Sentiment  = -0.229
+Tweet: $AMZN rejected that 604 to the penny. Weak open and it goes r/g within first 30 mins, could have 8-10 points in it. https://t.co/58tEAEXxpE
+Snippet: Weak open and it goes r/g within first 30 mins
+
+No. 162
+Prediction = +0.229
+Sentiment  = -0.295
+Tweet: GG #PC shipments slid -9.6% to lowest quarterly total since 2007 #Dell dethrones $HPQ 1st time this decade $MSFT $IT https://t.co/0b2RRIWSV9
+Snippet: ['shipments slid -9.6% to lowest quarterly total since 2007', 'dethrones']
+
+No. 163
+Prediction = +0.230
+Sentiment  = -0.403
+Tweet: $AAPL signs up with Google cloud, to spend less with Amazon Web Services. $AMZN drops late in the day from resistance, Slims target 540
+Snippet: $AAPL signs up with Google cloud
+
+No. 165
+Prediction = +0.259
+Sentiment  = -0.319
+Tweet: @sunnynaplesfl Jason pass for me $GOOGL nt done good with that name so will pass it... focus on ES SPY today on FOMC and long CL as well
+Snippet: nt done good with that name so will pass it
+
+No. 168
+Prediction = +0.024
+Sentiment  = -0.261
+Tweet: @tim_cook and $AAPL must lobby against Judge Garland or they risk losing the case
+Snippet: obby against Judge Garland or they risk losing the case
+
+No. 170
+Prediction = +0.005
+Sentiment  = +0.623
+Tweet: Nobody is recommending the sale of this stock. Big things coming. $MU Micron https://t.co/ugUs7uVb5e
+Snippet: ['Nobody is recommending the sale of this stock', 'Big things coming']
+
+No. 173
+Prediction = -0.168
+Sentiment  = +0.399
+Tweet: BMW entering into ride-share market with i3 https://t.co/TTB3L7Z5yT $TSLA $BAMXY
+Snippet: BMW entering into ride-share market with i3
+
+No. 180
+Prediction = +0.021
+Sentiment  = -0.105
+Tweet: $FAST $GWW - daily sales slowing again, pretty timely coincident indicator https://t.co/m6BKHBkzK5
+Snippet: daily sales slowing again
+
+No. 184
+Prediction = +0.213
+Sentiment  = -0.324
+Tweet: Will Amazon's massive logistics capex result in missed earnings for the quarter?
+https://t.co/CVVzjyD4Qa $AMZN
+Snippet: massive logistics capex result in missed earnings
+
+No. 185
+Prediction = +0.188
+Sentiment  = -0.086
+Tweet: Schizo stocks start strong finish weak - $FB $SEDG $LUV - See the video here
+Never finishing weak, our Disclaimer
+https://t.co/lnbwUl3rK8
+Snippet: start strong finish weak
+
+No. 192
+Prediction = +0.214
+Sentiment  = -0.188
+Tweet: $FB is taking the shine off $AAPL and $GOOG. As for $TWTR, no words.
+Snippet: As for $TWTR, no words.
+
+No. 206
+Prediction = +0.230
+Sentiment  = -0.182
+Tweet: Indices are rallying today, but it seems like a lot of the "highly covered companies" are underperforming $AAPL $FB $AMZN $MCD $SPY
+Snippet: ['Indices are rallying today', "a lot of the 'highly covered companies' are underperforming"]
+
+No. 208
+Prediction = +0.241
+Sentiment  = -0.378
+Tweet: $TSLA recalling pretty much every single model X @cnnbrk got to short that even at work you jump in money trade
+Snippet: got to short that even at work you jump in money trade
+
+No. 212
+Prediction = +0.197
+Sentiment  = -0.554
+Tweet: $TSLA borrow still -7.5% which means very tight on the avail stock for shorting....  $VALE meanwhile easing up to "only -8%
+Snippet: very tight on the avail stock for shorting
+
+No. 224
+Prediction = +0.053
+Sentiment  = -0.030
+Tweet: [Chart] $FB Elliott Wave Chart Update 4.12.16 - Best case zigzag and reversal scenario -  https://t.co/4bOCSj4jeo
+Snippet: zigzag and reversal scenario
+
+No. 228
+Prediction = +0.188
+Sentiment  = -0.086
+Tweet: Schizo stocks start strong finish weak - $FB $SEDG $LUV - See the video here
+Never finishing weak, our Disclaimer
+https://t.co/lnbwUl3rK8
+Snippet: start strong finish weak
+
+No. 230
+Prediction = +0.252
+Sentiment  = -0.213
+Tweet: Report: Apple signs up for Google's cloud, uses much less of Amazon's $AAPL $GOOG $GOOGL $AMZN $DROPB https://t.co/zN3KDGYvGT
+Snippet: Report: Apple signs up for Google's cloud
+
+No. 231
+Prediction = -0.169
+Sentiment  = +0.198
+Tweet: $TSLA "Recall will not impact financial results" ... Excel nonGAAP spreadsheet to make sure of that!
+Snippet: Recall will not impact financial results
+
+No. 236
+Prediction = -0.168
+Sentiment  = +0.165
+Tweet: $TSLA this must be tiniest recall ever! Musk doing the right thing yet again getting ahead of any issues. Seat issues already priced in
+Snippet: issues already priced in
+
+No. 252
+Prediction = +0.029
+Sentiment  = -0.331
+Tweet: @jay_21_ maybe $YHOO or $BABA. Bad governance, not confident in core biz
+Snippet: ['Bad governance', 'not confident in core biz']
+
+No. 256
+Prediction = +0.202
+Sentiment  = -0.336
+Tweet: Apple's iPhone SE: The Sold Out Flop $AAPL https://t.co/z9vrtpMR0W
+Snippet: Apple's iPhone SE: The Sold Out Flop
+
+No. 261
+Prediction = +0.025
+Sentiment  = +0.000
+Tweet: Commented on Apple In Need Of Innovation: Sell Rating https://t.co/9xOmUCSfIT $AAPL $AMZN $GOOG $GOOGL $MSFT
+Snippet: 
+
+No. 265
+Prediction = +0.017
+Sentiment  = -0.307
+Tweet: @AnthonyMaceroni well, technically recessions follow consecutive Qs of earnings declines 81% of the time. $SPY $SPX $AAPL $FB $GOOG $TWTR $V
+Snippet: ['recessions', 'declines']
+
+No. 270
+Prediction = +0.064
+Sentiment  = +0.000
+Tweet: @WallStreet_Rant @FlorentCapital 2/ $FB inst. ownership of 70% actually isn't egregious anyways, $FDX $BA $MCD all higher
+Snippet: 
+
+No. 271
+Prediction = +0.040
+Sentiment  = -0.093
+Tweet: As Alcoa Kicks Off March Quarter Earnings, We See More Reasons To Be Cautious https://t.co/QIPEseBq6s $FB $AA $AAPL $BAC $BKE $BLK $C $CAT
+Snippet: We See More Reasons To Be Cautious
+
+No. 274
+Prediction = +0.129
+Sentiment  = -0.230
+Tweet: Israel wants to tax $GOOG and $FCBK more and $CHKP CEO says taxes may make co leave https://t.co/U7nhwXAFhy + https://t.co/T4obqculvu
+Snippet: ['wants to ta', 'CEO says taxes may make co leave']
+
+No. 277
+Prediction = -0.046
+Sentiment  = +0.279
+Tweet: Sudden optimism about iPhone sales (i.e., not as bad as expected) gives Apple $AAPL a lift.  https://t.co/oKTCw4YiB5
+Snippet: ['Sudden optimism about iPhone sales', 'not as bad as expected', 'gives Apple $AAPL a lift']
+
+No. 295
+Prediction = +0.229
+Sentiment  = -0.283
+Tweet: GG #PC shipments slid -9.6% to lowest quarterly total since 2007 #Dell dethrones $HPQ 1st time this decade $MSFT $IT https://t.co/0b2RRIWSV9
+Snippet: ['shipments slid -9.6% to lowest quarterly total since 2007', 'dethrones']
+
+No. 300
+Prediction = +0.017
+Sentiment  = -0.307
+Tweet: @AnthonyMaceroni well, technically recessions follow consecutive Qs of earnings declines 81% of the time. $SPY $SPX $AAPL $FB $GOOG $TWTR $V
+Snippet: ['recessions', 'declines']
+
+No. 303
+Prediction = +0.214
+Sentiment  = -0.376
+Tweet: Tesla dropped a hard J this morning $TSLA https://t.co/L8uK1UaVyk
+Snippet: Tesla dropped a hard J this morning
+
+No. 331
+Prediction = -0.168
+Sentiment  = +0.132
+Tweet: BMW entering into ride-share market with i3 https://t.co/TTB3L7Z5yT $TSLA $BAMXY
+Snippet: BMW entering into ride-share market with i3
+
+No. 333
+Prediction = +0.244
+Sentiment  = -0.380
+Tweet: Report: Apple signs up for Google's cloud, uses much less of Amazon's $AAPL $GOOG $GOOGL $AMZN $DROPB https://t.co/zN3KDGYvGT
+Snippet: ["Report: Apple signs up for Google's cloud", 'uses much less of Amazon']
+
+No. 340
+Prediction = +0.202
+Sentiment  = -0.211
+Tweet: Sold some $TSLA Puts this morning Closed them at the close. Helps pay for monthly expenses
+Snippet: Sold some $TSLA Puts this morning
+
+No. 344
+Prediction = -0.172
+Sentiment  = +0.294
+Tweet: $NVDA goes deep into #machinelearning and #AI territory with its new $125,000 supercomputer...  https://t.co/Ej3233wPcm
+Snippet: goes deep into #machinelearning and #AI territory with its new $125,000 supercomputer
+
+No. 346
+Prediction = +0.131
+Sentiment  = -0.085
+Tweet: Whole foods $WFM may feel price competition but $TFM will have a way to go price wise to compete with Kroger. $KR https://t.co/XBxJVG94mx
+Snippet: $TFM will have a way to go price wise to compete
+
+No. 351
+Prediction = +0.199
+Sentiment  = -0.247
+Tweet: $AMGN on top of $REGN $SNY. Sanofi often on the wrong end of business. https://t.co/6RnuT0oNjR
+Snippet: Sanofi often on the wrong end of business.
+
+No. 389
+Prediction = -0.168
+Sentiment  = +0.272
+Tweet: Facebook stock is now +$72 -- When or if the stock shoots up to $200, Mark Zuckerberg will become the richest man in the world. $FB
+Snippet: Facebook stock is now +$72
+
+No. 394
+Prediction = +0.029
+Sentiment  = -0.331
+Tweet: @jay_21_ maybe $YHOO or $BABA. Bad governance, not confident in core biz
+Snippet: ['Bad governance', 'not confident in core biz']
+
+No. 400
+Prediction = -0.124
+Sentiment  = +0.235
+Tweet: If you are laughing at $AMZN logistic provider ambitions you are a damn fool. Not every idea $AMZN has is bad.
+Snippet: Not every idea $AMZN has is bad.
+
+No. 401
+Prediction = +0.037
+Sentiment  = -0.355
+Tweet: Agree the $sbux valuation is high. No net cash, fwd growth &lt;10%, high peg, historical high pe &amp; fwd PE.
+Snippet: ['valuation is high', 'No net cash', 'fwd growth <10%', 'high peg', 'historical high pe & fwd PE']
+
+No. 406
+Prediction = -0.088
+Sentiment  = +0.226
+Tweet: $agn getting rid of its generic biz wouldn't have any interest in $endp imo.  $hznp makes much more sense, plus its Irish based
+Snippet: ['plus its Irish based', ' getting rid of its generic biz']
+
+No. 420
+Prediction = -0.043
+Sentiment  = +0.000
+Tweet: Nice names on watch for tomorrow $TUES long $8+, $CVEO short $1.85-2.00. $GERN $TNET $WDC potential r/g and $GOGO short under $11. #stocks
+Snippet: 
+
+No. 436
+Prediction = +0.226
+Sentiment  = -0.362
+Tweet: @TopDownMoney USIO ops are profitable. The drag is bloom lake, which they are divesting. $CLF
+Snippet: USIO ops are profitable
+
+No. 437
+Prediction = +0.216
+Sentiment  = -0.493
+Tweet: The Boeing Company (NYSE:BA) Bearish Trader bets $550K that Stock Will Sell Off 9.79% by July Expiry $BA http://stks.co/tCSE
+Snippet: earish Trader bets $550K that Stock Will Sell Off
+
+No. 438
+Prediction = +0.224
+Sentiment  = -0.494
+Tweet: $QIHU totally missed this one, was about to jump in on that 60 break test but didn&#39;t, congrats shorts
+Snippet: congrats shorts
+
+No. 440
+Prediction = +0.034
+Sentiment  = +0.000
+Tweet: $DG double bottom bounce or drops further to Gap fill at 54.74, wait and see before taking any action
+Snippet: wait and see before taking any action
+
+No. 452
+Prediction = +0.032
+Sentiment  = -0.335
+Tweet: How Ron Johnson tried, and failed, to inject a bit of Apple culture into JC Penney http://stks.co/q8R6 via TUAW $JCP $AAPL
+Snippet: Ron Johnson tried, and failed, to inject a bit of Apple culture into JC Penney
+
+No. 453
+Prediction = +0.237
+Sentiment  = -0.375
+Tweet: @Sliver @50 $sina--agree risky watching very closely
+Snippet: agree risky watching very closely
+
+No. 457
+Prediction = +0.221
+Sentiment  = -0.219
+Tweet: @ASM Bet ya we see a $CMG @ $385 on Weds especially if SPY decides to wane. Fader play here. jmho
+Snippet: Fader play here
+
+No. 467
+Prediction = +0.197
+Sentiment  = -0.312
+Tweet: $AAPL The gist of downgrades was apple failed to make a phone that will help supercharge growth in China, what if they were 100% right? umm
+Snippet: gist of downgrades was apple failed to make a phone th
+
+No. 469
+Prediction = +0.245
+Sentiment  = -0.285
+Tweet: $GRPN having a much better day than $FB
+Snippet: $GRPN having a much better day than $FB
+
+No. 485
+Prediction = -0.173
+Sentiment  = +0.095
+Tweet: @PhamsterZzzzzzzzz @EpicDynami @russdorff idk but $NSPH seems to be getting a lot of hype. I all mine is tied into SGNL and ONCY for now. GL
+Snippet: getting a lot of hype
+
+No. 487
+Prediction = +0.195
+Sentiment  = -0.460
+Tweet: $ENSG Barry Port Unloaded $16,673 Worth of The Ensign Group, Inc. (NASDAQ:ENSG) Shares http://stks.co/i2Rm4
+Snippet: Unloaded $16,673 Worth of The Ensign Group, Inc. (NASDAQ:ENSG) Shares
+
+No. 488
+Prediction = -0.208
+Sentiment  = +0.538
+Tweet: $NBIX continues its rally
+Snippet: continues its rally
+
+No. 492
+Prediction = +0.280
+Sentiment  = -0.354
+Tweet: $SIGA Bid for Reargument Denied by Judge
+Snippet: Bid for Reargument Denied by Judge
+
+No. 499
+Prediction = +0.222
+Sentiment  = -0.122
+Tweet: $ZC_F One thing you can&#39;t short here is $DBA food. Its barely getting warm in chicago, and it looks like drought conditions in soil already
+Snippet: looks like drought conditions in soil already
+
+No. 501
+Prediction = +0.231
+Sentiment  = -0.524
+Tweet: $sina trying to drag $bidu with it.
+Snippet: trying to drag $bidu with it.
+
+No. 504
+Prediction = +0.021
+Sentiment  = -0.426
+Tweet: &quot;@jbraica: $UNXL another story stock with an unhappy ending.  Typical.&quot; Yeah. Pretty much. We have seen so many of these.
+Snippet: another story stock with an unhappy ending
+
+No. 511
+Prediction = +0.147
+Sentiment  = -0.441
+Tweet: @cfm860 @devsathe in the end DropBox will end up selling for pennies on the dollar. Just like Box.net $AAPL
+Snippet: will end up selling for pennies on the dollar
+
+No. 512
+Prediction = -0.171
+Sentiment  = +0.240
+Tweet: Book on Jobs makes news citing Steve Jobs saying he cracked the code on simplifying integrating TV with cloud. Imagine $AAPL TV impact!! $$$
+Snippet: Imagine $AAPL TV impact!! $$$
+
+No. 515
+Prediction = +0.029
+Sentiment  = -0.541
+Tweet: Loss of opportunity &gt; Loss of capital ($CHK)
+Snippet: 
+
+No. 516
+Prediction = +0.062
+Sentiment  = -0.494
+Tweet: out $NFLX -.35
+Snippet: out $NFLX -.35
+
+No. 519
+Prediction = +0.501
+Sentiment  = -0.299
+Tweet: $XLF http://stks.co/1KJ9 Bounced off target buy area, bought $skf as a hedge. watch 50ma&#39;s slope
+Snippet: Bounced off target buy area
+
+No. 521
+Prediction = +0.238
+Sentiment  = -0.341
+Tweet: Key price to watch in $NFLX, off the previous double top reject, 218.23 http://stks.co/sIYn
+Snippet: double top reject
+
+No. 534
+Prediction = +0.068
+Sentiment  = -0.596
+Tweet: Micron Shares Pounded On Fears Of Loss Of Business From Apple; Stifel Defends $AAPL $MU http://stks.co/t1Z8T @Marjo
+Snippet: Micron Shares Pounded On Fears Of Loss Of Business From Apple
+
+No. 535
+Prediction = -0.193
+Sentiment  = +0.361
+Tweet: $CNP Sell Short Position on CNP,...Closed for Profit $ 59,367.00 (7.75%) http://stks.co/ghjc
+Snippet: Sell Short Position on
+
+No. 536
+Prediction = +0.053
+Sentiment  = -0.482
+Tweet: they&#39;re usually cheap for a reason RT @howardlindzon my dog of the last few months...$LF damn me and low priced stocks
+Snippet: damn me and low priced stocks
+
+No. 537
+Prediction = -0.236
+Sentiment  = +0.000
+Tweet: MY $LNKD short worked. Thank you $GMCR for the hint. $LNKD puts up 50%
+Snippet: ['short worked', 'puts up']
+
+No. 538
+Prediction = -0.171
+Sentiment  = +0.418
+Tweet: $amzn 4 period RSI is down at 20, just read Connors book on trading strategies
+Snippet: RSI is down at 20
+
+No. 541
+Prediction = +0.166
+Sentiment  = -0.369
+Tweet: $Oil slid to a four-year low after #OPEC kept its oil production unchanged 
+http://stks.co/a1IX4 $USO $WTI $Brent
+Snippet: ['Oil slid to a four-year low after', '#OPEC kept its oil production unchange']
+
+No. 542
+Prediction = +0.032
+Sentiment  = +0.000
+Tweet: $NVDA sideways
+Snippet: sideways
+
+No. 546
+Prediction = +0.025
+Sentiment  = -0.105
+Tweet: $AAPL at resistance right here...sold my shares...will buy back if it dips or if it goes in the 128 gap zone
+Snippet: ['at resistance right here', 'sold my shares']
+
+No. 557
+Prediction = +0.296
+Sentiment  = -0.274
+Tweet: $HZNP havent seen vol like this since the runup. lets see one more dip to 2.0x
+Snippet: lets see one more dip
+
+No. 559
+Prediction = -0.017
+Sentiment  = +0.394
+Tweet: $PRLB hanging tough in down market due to analyst upgrades last week. Up almost 3%.
+Snippet: ['hanging tough in down market due to analyst upgrades', 'Up almost 3%']
+
+No. 566
+Prediction = +0.102
+Sentiment  = +0.000
+Tweet: What&#39;s more exciting, this market or watching paint dry? $SPY. Typical of the $VXX 20-23 range market w/low volatility
+Snippet: ['watching paint dry', 'low volatility']
+
+No. 567
+Prediction = -0.096
+Sentiment  = +0.198
+Tweet: $AAPL 7. Fundamentally nothing has changed and this company will make more profit than others whether the stock price is 200 or 800
+Snippet: Fundamentally nothing has changed
+
+No. 576
+Prediction = +0.469
+Sentiment  = -0.488
+Tweet: RT @joemccann the correleation between the dollar index and $SPY is simply amazing. $DX finds support, $SPY retreats like clockwork
+Snippet: retreats like clockwork
+
+No. 580
+Prediction = -0.149
+Sentiment  = +0.058
+Tweet: $LC in deal with $NBG to bail out Greece
+Snippet: bail out
+
+No. 582
+Prediction = -0.168
+Sentiment  = +0.269
+Tweet: $AAPL Apple (AAPL) Price Target Raised to $112 at BTIG
+Snippet: Price Target Raised
+
+No. 584
+Prediction = -0.148
+Sentiment  = +0.224
+Tweet: $DANG tapping on 10.00
+Snippet: tapping on 10.00
+
+No. 590
+Prediction = +0.205
+Sentiment  = +0.000
+Tweet: $CMI http://stks.co/zMd Decision time. Over the TL it can go to 114, below it can go to 90.
+Snippet: Over the TL it can go to 114, below it can go to 90.
+
+No. 603
+Prediction = +0.126
+Sentiment  = -0.453
+Tweet: $SSYS splat! poor Q1 orders?
+Snippet: splat! poor Q1 orders
+
+No. 607
+Prediction = +0.033
+Sentiment  = +0.000
+Tweet: $OCN huge blocks now 11,500 @7.92
+Snippet: 
+
+No. 608
+Prediction = +0.021
+Sentiment  = -0.370
+Tweet: $AAPL wants lower. up waves getting smaller on the 2 min
+Snippet: ['wants lower', 'up waves getting smaller']
+
+No. 610
+Prediction = +0.231
+Sentiment  = -0.524
+Tweet: $sina trying to drag $bidu with it.
+Snippet: trying to drag $bidu with it.
+
+No. 620
+Prediction = +0.022
+Sentiment  = -0.002
+Tweet: $UGAZ : Drop expected as London traders who took profit on their opening after they stood by watching our day zoom up 18%. UGAZ will go Up!
+Snippet: Drop expected
+
+No. 624
+Prediction = +0.211
+Sentiment  = -0.319
+Tweet: @MattKelmon 4 more years will be alot to worry about $spy $dia
+Snippet: alot to worry about
+
+No. 626
+Prediction = +0.234
+Sentiment  = -0.131
+Tweet: $UVXY so volatile! yowza :P
+Snippet: so volatile!
+
+No. 630
+Prediction = +0.435
+Sentiment  = -0.391
+Tweet: $NFLX I Love blood like a vampire.....Keep bleeding for me
+Snippet: I Love blood like a vampire.....Keep bleeding for me
+
