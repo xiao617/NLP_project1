@@ -1,0 +1,19 @@
+*** TextGrocery ***
+(train)R-squared: 0.915
+RMSE: 0.110
+MSE: 0.012
+(test)R-squared: 0.502
+RMSE: 0.268
+MSE: 0.072
+f1-micro: 0.828
+f1-macro: 0.544
+
+*** PMI ***
+(train)R-squared: 0.930
+RMSE: 0.100
+MSE: 0.010
+(test)R-squared: 0.512
+RMSE: 0.265
+MSE: 0.070
+f1-micro: 0.823
+f1-macro: 0.540
