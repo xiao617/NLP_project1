@@ -204,7 +204,7 @@ def main():
 		tempt.group_s = value
 		DataList.append(tempt)
     
-    # Save training data created by WordScore() and classification prediction
+    # Save testing data created by WordScore() and classification prediction
     # Data will be uesd for LinearRegression() in BOTH.py
 	outfile = open('TG_test.txt', 'w', encoding='utf-8')    
 	dataScore = []
